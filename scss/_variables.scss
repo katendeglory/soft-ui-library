@@ -1,0 +1,24 @@
+$ruler: 14px;
+$dark-mode: false;
+
+// Light Mode
+$color-bg: #ebecf0;
+$color-white: #fff;
+$color-shadow: rgba(
+  $color: #babecc,
+  $alpha: 0.9,
+);
+$main-text-color: #777;
+$text-field-radius: $ruler * 1;
+
+//Dark Mode
+@if ($dark-mode) {
+  $color-bg: #333333;
+  $color-white: #3b3b3b;
+  $color-shadow: rgba(
+    $color: #2b2b2b,
+    $alpha: 1,
+  );
+  $main-text-color: #aaa;
+  $text-field-radius: $ruler * 1;
+}

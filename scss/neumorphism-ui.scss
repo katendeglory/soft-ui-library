@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
+
+@import "variables";
+@import "form";
+@import "box";
+
+body,
+html {
+  background-color: $color-bg;
+  color: $main-text-color;
+  text-shadow: 1px 1px 1px $color-white;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}

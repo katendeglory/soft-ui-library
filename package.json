@@ -1,0 +1,15 @@
+{
+  "name": "neumorphism-scss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Glory Katende",
+    "email": "katendeglory@gmail.com"
+  },
+  "scripts": {
+    "watch": "sass --watch scss:css --style compressed",
+    "compile": "sass scss:css --style compressed",
+    "deploy": "git add . && git commit -am \"initial commit\" && git push -u origin master"
+  }
+}

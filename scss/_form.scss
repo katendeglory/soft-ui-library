@@ -1,0 +1,118 @@
+/********************************************* COMMON PROPERTIES *********************************************/
+
+.btn,
+input[type="text"],
+input[type="password"],
+input[type="checkbox"],
+input[type="radio"],
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  transition: all 0.25s ease-in-out;
+  color: $main-text-color;
+}
+
+/******************************************** TEXT FIELDS & BUTTONS ********************************************/
+
+.btn,
+input[type="text"],
+input[type="password"],
+textarea {
+  font-size: 16px;
+  border-radius: $text-field-radius;
+  padding: $ruler;
+  background-color: $color-bg;
+  text-shadow: 1px 1px 0 $color-white;
+  width: 100%;
+  &::placeholder {
+    color: rgba($color: $main-text-color, $alpha: 0.5);
+  }
+}
+
+/************************************************* TEXT FIELDS *************************************************/
+
+input[type="text"],
+input[type="password"],
+textarea {
+  box-shadow: inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+
+  &:focus {
+    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+}
+
+/************************************************** BUTTONS **************************************************/
+
+.btn {
+  display: block;
+  box-shadow: -5px -5px 20px $color-white, 5px 5px 20px $color-shadow;
+  text-align: center;
+
+  &:hover {
+    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+  }
+
+  &:active {
+    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+}
+/******************************************** BUTTONS, CHECKBOX & RADIO ******************************************/
+
+.btn,
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/*********************************************** CHECKBOX & RADIO ***********************************************/
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-shadow: 2px 2px 4px $color-shadow, -2px -2px 4px $color-white;
+  max-width: $ruler * 2.5;
+  max-height: $ruler * 2.5;
+  min-width: $ruler * 2.5;
+  min-height: $ruler * 2.5;
+  background: transparent;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:checked {
+    box-shadow: -2px -2px 3px $color-shadow, 2px 2px 3px $color-white;
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f00c";
+      font-size: $ruler * 1.5;
+      font-weight: bolder;
+      text-shadow: 3px 3px 5px $color-shadow, -3px -3px 5px $color-white;
+    }
+  }
+}
+
+/***************************************************** CHECKBOX *************************************************/
+
+input[type="checkbox"] {
+  border-radius: $ruler * 1;
+
+  &:checked::before {
+    content: "\f00c";
+  }
+}
+
+/***************************************************** RADIO *****************************************************/
+
+input[type="radio"] {
+  border-radius: 50%;
+
+  &:checked::before {
+    content: "\f192";
+  }
+}
