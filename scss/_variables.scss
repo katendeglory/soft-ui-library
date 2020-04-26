@@ -1,6 +1,9 @@
 $ruler: 14px;
 $dark-mode: false;
 
+//Colors
+$main-blue: #00a8ff;
+
 // Light Mode
 $color-bg: #ebecf0;
 $color-white: #fff;
@@ -10,7 +13,7 @@ $color-shadow: rgba(
 );
 $main-text-color: #777;
 $text-field-radius: $ruler * 1;
-$check-radio-color: $main-text-color;
+$check-radio-color: $main-blue;
 
 //Dark Mode
 @if ($dark-mode) {
@@ -22,5 +25,5 @@ $check-radio-color: $main-text-color;
   );
   $main-text-color: #aaa;
   $text-field-radius: $ruler * 1;
-  $check-radio-color: $main-text-color;
+  $check-radio-color: $main-blue;
 }

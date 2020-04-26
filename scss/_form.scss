@@ -85,11 +85,12 @@ input[type="checkbox"] {
   align-items: center;
 
   &:checked {
-    box-shadow: -2px -2px 3px $color-shadow, 2px 2px 3px $color-white;
+    // box-shadow: -2px -2px 3px $color-shadow, 2px 2px 3px $color-white;
+    box-shadow: -3px -3px 5px $color-shadow, 3px 3px 5px $color-white;
     &::before {
       font-family: "Font Awesome 5 Free";
       content: "\f00c";
-      font-size: $ruler * 1.5;
+      font-size: $ruler * 1.25;
       font-weight: bolder;
       text-shadow: 3px 3px 5px $color-shadow, -3px -3px 5px $color-white;
       color: $check-radio-color;
@@ -113,6 +114,6 @@ input[type="radio"] {
   border-radius: 50%;
 
   &:checked::before {
-    content: "\f192";
+    content: "\f111";
   }
 }
