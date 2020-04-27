@@ -5,6 +5,7 @@ input[type="text"],
 input[type="password"],
 input[type="checkbox"],
 input[type="radio"],
+select,
 textarea {
   -webkit-appearance: none;
   appearance: none;
@@ -132,5 +133,42 @@ input[type="radio"] {
   &:checked::before,
   &:disabled {
     content: "\f111";
+  }
+}
+
+/***************************************************** RADIO *****************************************************/
+
+.select-wrapper {
+  position: relative;
+
+  &::after {
+    transition: $transition;
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+
+    font-size: $ruler * 3;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px $color-shadow, -1px -1px 2px $color-white;
+    color: $check-radio-color;
+    position: absolute;
+    right: 20px;
+    top: 5%;
+    z-index: 1;
+  }
+
+  select {
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    border-radius: $text-field-radius;
+    padding: $ruler;
+    background: transparent;
+    width: 100%;
+    box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, 2px 2px 3px $color-shadow, -2px -2px 3px $color-white;
+    transition: $transition;
+
+    &:focus {
+      box-shadow: inset 2px 2px 3px $color-shadow, inset -2px -2px 3px $color-white;
+    }
   }
 }
