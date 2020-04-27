@@ -10,7 +10,7 @@ textarea {
   appearance: none;
   border: 0;
   outline: 0;
-  transition: all 0.25s ease-in-out;
+  transition: $transition;
   color: $main-text-color;
 }
 
@@ -84,16 +84,29 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
 
+  &::before {
+    transition: $transition;
+    font-family: "Font Awesome 5 Free";
+    font-size: $ruler * 1.5;
+    font-weight: bolder;
+    text-shadow: -3px -3px 5px $color-shadow, 3px 3px 5px $color-white;
+    color: $color-bg;
+  }
+
   &:checked {
-    // box-shadow: -2px -2px 3px $color-shadow, 2px 2px 3px $color-white;
     box-shadow: -3px -3px 5px $color-shadow, 3px 3px 5px $color-white;
     &::before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f00c";
-      font-size: $ruler * 1.25;
-      font-weight: bolder;
       text-shadow: 3px 3px 5px $color-shadow, -3px -3px 5px $color-white;
       color: $check-radio-color;
+    }
+  }
+
+  &:disabled {
+    box-shadow: -3px -3px 5px $color-shadow, 3px 3px 5px $color-white;
+
+    &::before {
+      text-shadow: 3px 3px 5px $color-shadow, -3px -3px 5px $color-white;
+      color: $color-bg;
     }
   }
 }
@@ -103,7 +116,9 @@ input[type="checkbox"] {
 input[type="checkbox"] {
   border-radius: $ruler * 1;
 
-  &:checked::before {
+  &::before,
+  &:checked::before,
+  &:disabled {
     content: "\f00c";
   }
 }
@@ -113,7 +128,9 @@ input[type="checkbox"] {
 input[type="radio"] {
   border-radius: 50%;
 
-  &:checked::before {
+  &::before,
+  &:checked::before,
+  &:disabled {
     content: "\f111";
   }
 }

@@ -1,6 +1,9 @@
+.with-hover {
+  transition: $transition;
+}
+
 .box-raised-1 {
   box-shadow: -5px -5px 20px $color-white, 5px 5px 20px $color-shadow;
-  transition: all 0.2s ease-in-out;
 
   &.with-hover:hover {
     box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
@@ -8,19 +11,15 @@
 }
 
 .box-raised-2 {
-  transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
-  box-shadow: 3px 3px 7px 0px $color-shadow, -3px -3px 7px 0px $color-white, inset 0px 0px 0px 0px $color-shadow,
-    inset 0px 0px 0px 0px $color-white;
+  box-shadow: 3px 3px 7px $color-shadow, -3px -3px 7px $color-white, inset 0 0 0 transparent, inset 0 0 0 transparent;
 
   &.with-hover:hover {
-    box-shadow: 0px 0px 0px 0px $color-shadow, 0px 0px 0px 0px $color-white, inset 3px 3px 7px 0px $color-shadow,
-      inset -3px -3px 7px 0px $color-white;
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px $color-shadow, inset -3px -3px 7px $color-white;
   }
 }
 
 .box-raised-3 {
   box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
-  transition: all 0.2s ease-in-out;
 
   &.with-hover:hover {
     box-shadow: -5px -5px 20px $color-white, 5px 5px 20px $color-shadow;
@@ -28,12 +27,10 @@
 }
 
 .box-inset-1 {
-  transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
-  box-shadow: 0px 0px 0px 0px $color-shadow, 0px 0px 0px 0px $color-white, inset 3px 3px 7px 0px $color-shadow,
-    inset -3px -3px 7px 0px $color-white;
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px $color-shadow, inset -3px -3px 7px $color-white;
 
   &.with-hover:hover {
-    box-shadow: 3px 3px 7px 0px $color-shadow, -3px -3px 7px 0px $color-white, inset 0px 0px 0px 0px $color-shadow,
-      inset 0px 0px 0px 0px $color-white;
+    box-shadow: 3px 3px 7px $color-shadow, -3px -3px 7px 0px $color-white, inset 0 0 0 transparent,
+      inset 0 0 0 transparent;
   }
 }
