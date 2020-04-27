@@ -16,6 +16,15 @@
   &.with-hover:hover {
     box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px $color-shadow, inset -3px -3px 7px $color-white;
   }
+
+  /*********************************** SMALL ***********************************/
+  &.sm {
+    box-shadow: 2px 2px 3px $color-shadow, -2px -2px 3px $color-white, inset 0 0 0 transparent, inset 0 0 0 transparent;
+    &.with-hover:hover {
+      box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px $color-shadow,
+        inset -2px -2px 3px $color-white;
+    }
+  }
 }
 
 .box-raised-3 {
@@ -30,7 +39,15 @@
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px $color-shadow, inset -3px -3px 7px $color-white;
 
   &.with-hover:hover {
-    box-shadow: 3px 3px 7px $color-shadow, -3px -3px 7px 0px $color-white, inset 0 0 0 transparent,
-      inset 0 0 0 transparent;
+    box-shadow: 3px 3px 7px $color-shadow, -3px -3px 7px $color-white, inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+
+  /*********************************** SMALL ***********************************/
+  &.sm {
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px $color-shadow, inset -2px -2px 3px $color-white;
+    &.with-hover:hover {
+      box-shadow: 2px 2px 3px $color-shadow, -2px -2px 3px $color-white, inset 0 0 0 transparent,
+        inset 0 0 0 transparent;
+    }
   }
 }
