@@ -1,4 +1,4 @@
-$ruler: 14px;
+$ruler: 13px;
 $dark-mode: false;
 
 //Shared Properties
@@ -14,7 +14,10 @@ $color-shadow: rgba(
 );
 $main-text-color: #777;
 $text-field-radius: $ruler * 1;
-$check-radio-color: $main-blue;
+$check-radio-color: rgba(
+  $color: $main-blue,
+  $alpha: 0.75,
+);
 
 //Dark Mode
 @if ($dark-mode) {
@@ -26,5 +29,8 @@ $check-radio-color: $main-blue;
   );
   $main-text-color: #aaa;
   $text-field-radius: $ruler * 1;
-  $check-radio-color: $main-blue;
+  $check-radio-color: rgba(
+    $color: $main-blue,
+    $alpha: 0.75,
+  );
 }

@@ -170,5 +170,9 @@ input[type="radio"] {
     &:focus {
       box-shadow: inset 2px 2px 3px $color-shadow, inset -2px -2px 3px $color-white;
     }
+
+    option {
+      background: $color-bg;
+    }
   }
 }
