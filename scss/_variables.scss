@@ -2,7 +2,7 @@ $ruler: 13px;
 $dark-mode: false;
 
 //Shared Properties
-$main-blue: #00a8ff;
+$primary-color: darken(#00a8ff, 5);
 $transition: all 0.35s ease-in-out;
 
 // Light Mode
@@ -14,14 +14,11 @@ $color-shadow: rgba(
 );
 $main-text-color: #777;
 $text-field-radius: $ruler * 1;
-$check-radio-color: rgba(
-  $color: $main-blue,
-  $alpha: 0.75,
-);
+$check-radio-color: $primary-color;
 
 //Dark Mode
-
 @if ($dark-mode) {
+  $primary-color: darken(#00a8ff, 20);
   $color-bg: #333333;
   $color-white: #3b3b3b;
   $color-shadow: rgba(
@@ -30,8 +27,5 @@ $check-radio-color: rgba(
   );
   $main-text-color: #aaa;
   $text-field-radius: $ruler * 1;
-  $check-radio-color: rgba(
-    $color: $main-blue,
-    $alpha: 0.75,
-  );
+  $check-radio-color: $primary-color;
 }
