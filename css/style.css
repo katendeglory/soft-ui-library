@@ -4,7 +4,7 @@
 body {
   max-width: 800px;
   margin: auto;
-  padding: 6rem 15px;
+  padding: 6rem 15px 1rem 15px;
 }
 
 header {
@@ -35,13 +35,13 @@ header {
   font-weight: 100;
 }
 
-form .form-section {
+form .block-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   margin: 2rem 0;
 }
-form .form-section label {
+form .block-section label {
   display: flex;
   align-items: center;
 }
@@ -62,6 +62,13 @@ form .form-section label {
 code {
   font-size: 15px;
   background: var(--color-bg) !important;
+}
+
+.footer {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

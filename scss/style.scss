@@ -5,7 +5,7 @@
 body {
   max-width: 800px;
   margin: auto;
-  padding: 6rem 15px;
+  padding: 6rem 15px 1rem 15px;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
 }
 
 form {
-  .form-section {
+  .block-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
@@ -67,4 +67,11 @@ form {
 code {
   font-size: 15px;
   background: var(--color-bg) !important;
+}
+
+.footer {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
