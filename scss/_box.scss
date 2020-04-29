@@ -1,52 +1,58 @@
 .with-hover {
-  transition: $transition;
+  transition: var(--transition);
 }
 
 .box-raised-1 {
-  box-shadow: -5px -5px 20px $color-white, 5px 5px 20px $color-shadow;
+  box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
 
   &.with-hover:hover {
-    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
   }
 }
 
 .box-raised-2 {
-  box-shadow: 3px 3px 7px $color-shadow, -3px -3px 7px $color-white, inset 0 0 0 transparent, inset 0 0 0 transparent;
+  box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent,
+    inset 0 0 0 transparent;
 
   &.with-hover:hover {
-    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px $color-shadow, inset -3px -3px 7px $color-white;
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow),
+      inset -3px -3px 7px var(--color-white);
   }
 
   /*********************************** SMALL ***********************************/
   &.sm {
-    box-shadow: 2px 2px 3px $color-shadow, -2px -2px 3px $color-white, inset 0 0 0 transparent, inset 0 0 0 transparent;
+    box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent,
+      inset 0 0 0 transparent;
     &.with-hover:hover {
-      box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px $color-shadow,
-        inset -2px -2px 3px $color-white;
+      box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow),
+        inset -2px -2px 3px var(--color-white);
     }
   }
 }
 
 .box-raised-3 {
-  box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+  box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
 
   &.with-hover:hover {
-    box-shadow: -5px -5px 20px $color-white, 5px 5px 20px $color-shadow;
+    box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   }
 }
 
 .box-inset-1 {
-  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px $color-shadow, inset -3px -3px 7px $color-white;
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow),
+    inset -3px -3px 7px var(--color-white);
 
   &.with-hover:hover {
-    box-shadow: 3px 3px 7px $color-shadow, -3px -3px 7px $color-white, inset 0 0 0 transparent, inset 0 0 0 transparent;
+    box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent,
+      inset 0 0 0 transparent;
   }
 
   /*********************************** SMALL ***********************************/
   &.sm {
-    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px $color-shadow, inset -2px -2px 3px $color-white;
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow),
+      inset -2px -2px 3px var(--color-white);
     &.with-hover:hover {
-      box-shadow: 2px 2px 3px $color-shadow, -2px -2px 3px $color-white, inset 0 0 0 transparent,
+      box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent,
         inset 0 0 0 transparent;
     }
   }

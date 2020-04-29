@@ -1,5 +1,6 @@
 body {
   max-width: 800px;
+  padding: 15px;
   margin: auto;
 }
 
@@ -8,47 +9,50 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 4rem;
-  padding: 1rem 0;
   z-index: 99;
 }
 
 .nav-container {
   max-width: 800px;
+  padding: 0 20px 0 0px;
   margin: auto;
-  padding: 0 10px;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container .brand-logo {
   display: flex;
   align-items: center;
 }
 
 .nav-container img {
   height: 40px;
-  margin-right: 5px;
 }
 
 .nav-container h2 {
   font-weight: 100;
 }
 
-input, .btn {
+form input, form .btn {
   margin: 1rem 0;
 }
 
 form {
-  padding: 20px;
   padding-top: 7.5rem;
 }
 
 .box-container {
   display: grid;
   gap: 25px;
-  padding: 25px;
+  padding: 25px 0;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .box-container div {
-  padding: 20px;
   height: 10rem;
+  width: 100%;
   display: grid;
   place-items: center;
 }

@@ -4,16 +4,15 @@
 @import "form";
 @import "box";
 
-body,
-html {
-  background-color: $color-bg;
-  color: $main-text-color;
+body {
+  background-color: var(--color-bg);
+  color: var(--main-text-color);
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
 header {
-  background-color: $color-bg;
+  background-color: var(--color-bg);
 }
 
 * {

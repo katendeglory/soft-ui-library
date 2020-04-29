@@ -1,1 +1,298 @@
-﻿@import"https://fonts.googleapis.com/css?family=Rubik:300&display=swap";.btn,input[type=text],input[type=password],input[type=checkbox],input[type=radio],select,textarea{-webkit-appearance:none;appearance:none;border:0;outline:0;transition:all .35s ease-in-out;color:#777}.btn,input[type=text],input[type=password],textarea{font-size:16px;border-radius:13px;padding:13px;background-color:#ebecf0;width:100%}.btn::placeholder,input[type=text]::placeholder,input[type=password]::placeholder,textarea::placeholder{color:rgba(119,119,119,.5)}input[type=text],input[type=password],textarea{box-shadow:inset 2px 2px 5px rgba(186,190,204,.9),inset -5px -5px 10px #fff}input[type=text]:focus,input[type=password]:focus,textarea:focus{box-shadow:inset 1px 1px 2px rgba(186,190,204,.9),inset -1px -1px 2px #fff}.btn{display:block;box-shadow:-5px -5px 20px #fff,5px 5px 20px rgba(186,190,204,.9);text-align:center}.btn:hover{box-shadow:-2px -2px 5px #fff,2px 2px 5px rgba(186,190,204,.9)}.btn:active{box-shadow:inset 1px 1px 2px rgba(186,190,204,.9),inset -1px -1px 2px #fff}.btn i{margin-right:5px}.btn.btn-primary{background:#0097e6;color:#eee}.btn,input[type=radio],input[type=checkbox]{cursor:pointer}input[type=radio],input[type=checkbox]{box-shadow:2px 2px 4px rgba(186,190,204,.9),-2px -2px 4px #fff;max-width:32.5px;max-height:32.5px;min-width:32.5px;min-height:32.5px;background:transparent;margin-right:10px;display:inline-flex;justify-content:center;align-items:center}input[type=radio]::before,input[type=checkbox]::before{transition:all .35s ease-in-out;font-family:"Font Awesome 5 Free";font-size:19.5px;font-weight:bolder;text-shadow:-3px -3px 5px rgba(186,190,204,.9),3px 3px 5px #fff;color:#ebecf0}input[type=radio]:checked,input[type=checkbox]:checked{box-shadow:-3px -3px 5px rgba(186,190,204,.9),3px 3px 5px #fff}input[type=radio]:checked::before,input[type=checkbox]:checked::before{text-shadow:3px 3px 5px rgba(186,190,204,.9),-3px -3px 5px #fff;color:#0097e6}input[type=radio]:disabled,input[type=checkbox]:disabled{box-shadow:-3px -3px 5px rgba(186,190,204,.9),3px 3px 5px #fff}input[type=radio]:disabled::before,input[type=checkbox]:disabled::before{text-shadow:3px 3px 5px rgba(186,190,204,.9),-3px -3px 5px #fff;color:#ebecf0}input[type=checkbox]{border-radius:13px}input[type=checkbox]::before,input[type=checkbox]:checked::before,input[type=checkbox]:disabled{content:""}input[type=radio]{border-radius:50%}input[type=radio]::before,input[type=radio]:checked::before,input[type=radio]:disabled{content:""}.select-wrapper{position:relative}.select-wrapper::after{transition:all .35s ease-in-out;font-family:"Font Awesome 5 Free";content:"";font-size:39px;font-weight:600;text-shadow:1px 1px 2px rgba(186,190,204,.9),-1px -1px 2px #fff;color:#0097e6;position:absolute;right:20px;top:5%;z-index:1}.select-wrapper select{position:relative;z-index:2;font-size:16px;border-radius:13px;padding:13px;background:transparent;width:100%;box-shadow:inset 0 0 0 transparent,inset 0 0 0 transparent,2px 2px 3px rgba(186,190,204,.9),-2px -2px 3px #fff;transition:all .35s ease-in-out}.select-wrapper select:focus{box-shadow:inset 2px 2px 3px rgba(186,190,204,.9),inset -2px -2px 3px #fff}.select-wrapper select option{background:#ebecf0}.with-hover{transition:all .35s ease-in-out}.box-raised-1{box-shadow:-5px -5px 20px #fff,5px 5px 20px rgba(186,190,204,.9)}.box-raised-1.with-hover:hover{box-shadow:-2px -2px 5px #fff,2px 2px 5px rgba(186,190,204,.9)}.box-raised-2{box-shadow:3px 3px 7px rgba(186,190,204,.9),-3px -3px 7px #fff,inset 0 0 0 transparent,inset 0 0 0 transparent}.box-raised-2.with-hover:hover{box-shadow:0 0 0 transparent,0 0 0 transparent,inset 3px 3px 7px rgba(186,190,204,.9),inset -3px -3px 7px #fff}.box-raised-2.sm{box-shadow:2px 2px 3px rgba(186,190,204,.9),-2px -2px 3px #fff,inset 0 0 0 transparent,inset 0 0 0 transparent}.box-raised-2.sm.with-hover:hover{box-shadow:0 0 0 transparent,0 0 0 transparent,inset 2px 2px 3px rgba(186,190,204,.9),inset -2px -2px 3px #fff}.box-raised-3{box-shadow:-2px -2px 5px #fff,2px 2px 5px rgba(186,190,204,.9)}.box-raised-3.with-hover:hover{box-shadow:-5px -5px 20px #fff,5px 5px 20px rgba(186,190,204,.9)}.box-inset-1{box-shadow:0 0 0 transparent,0 0 0 transparent,inset 3px 3px 7px rgba(186,190,204,.9),inset -3px -3px 7px #fff}.box-inset-1.with-hover:hover{box-shadow:3px 3px 7px rgba(186,190,204,.9),-3px -3px 7px #fff,inset 0 0 0 transparent,inset 0 0 0 transparent}.box-inset-1.sm{box-shadow:0 0 0 transparent,0 0 0 transparent,inset 2px 2px 3px rgba(186,190,204,.9),inset -2px -2px 3px #fff}.box-inset-1.sm.with-hover:hover{box-shadow:2px 2px 3px rgba(186,190,204,.9),-2px -2px 3px #fff,inset 0 0 0 transparent,inset 0 0 0 transparent}body,html{background-color:#ebecf0;color:#777;scroll-behavior:smooth;box-sizing:border-box}header{background-color:#ebecf0}*{font-family:"Rubik",sans-serif;box-sizing:inherit;padding:0;margin:0}/*# sourceMappingURL=neumorphism-ui.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
+:root {
+  --ruler: 13px;
+  --transition: all 0.25s ease-in-out;
+}
+
+.light-mode {
+  --primary-color: #0097e6;
+  --color-bg: #ebecf0;
+  --color-white: #fff;
+  --color-shadow: rgba(186, 190, 204, 0.9);
+  --main-text-color: #777;
+  --text-field-radius: calc(var(--ruler) * 1);
+  --check-radio-color: var(--primary-color);
+}
+
+.dark-mode {
+  --primary-color: #0086cc;
+  --color-bg: #333333;
+  --color-white: #3b3b3b;
+  --color-shadow: #2b2b2b;
+  --main-text-color: #aaa;
+  --text-field-radius: calc(var(--ruler) * 1);
+  --check-radio-color: var(--primary-color);
+}
+
+/********************************************* COMMON PROPERTIES *********************************************/
+.btn,
+input[type=text],
+input[type=password],
+input[type=checkbox],
+input[type=radio],
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  transition: var(--transition);
+  color: var(--main-text-color);
+}
+
+/******************************************** TEXT FIELDS & BUTTONS ********************************************/
+.btn,
+input[type=text],
+input[type=password],
+textarea {
+  font-size: 16px;
+  border-radius: var(--text-field-radius);
+  padding: var(--ruler);
+  background-color: var(--color-bg);
+  width: 100%;
+}
+.btn::placeholder,
+input[type=text]::placeholder,
+input[type=password]::placeholder,
+textarea::placeholder {
+  color: var(--main-text-color);
+}
+
+/************************************************* TEXT FIELDS *************************************************/
+input[type=text],
+input[type=password],
+textarea {
+  box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+  box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+}
+
+/************************************************** BUTTONS **************************************************/
+.btn {
+  display: block;
+  box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+  text-align: center;
+  width: auto;
+}
+.btn:hover {
+  box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+}
+.btn:active {
+  box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+}
+.btn i {
+  margin-right: 5px;
+}
+.btn.btn-primary {
+  background: var(--primary-color);
+  color: #eee;
+}
+.btn .btn-block {
+  width: 100%;
+}
+
+/******************************************** BUTTONS, CHECKBOX & RADIO ******************************************/
+.btn,
+input[type=radio],
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+/*********************************************** CHECKBOX & RADIO ***********************************************/
+input[type=radio],
+input[type=checkbox] {
+  box-shadow: 2px 2px 4px var(--color-shadow), -2px -2px 4px var(--color-white);
+  max-width: calc(var(--ruler) * 2.5);
+  max-height: calc(var(--ruler) * 2.5);
+  min-width: calc(var(--ruler) * 2.5);
+  min-height: calc(var(--ruler) * 2.5);
+  background: transparent;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type=radio]::before,
+input[type=checkbox]::before {
+  transition: var(--transition);
+  font-family: "Font Awesome 5 Free";
+  font-size: calc(var(--ruler) * 1.5);
+  font-weight: bolder;
+  text-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
+  color: var(--color-bg);
+}
+input[type=radio]:checked,
+input[type=checkbox]:checked {
+  box-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
+}
+input[type=radio]:checked::before,
+input[type=checkbox]:checked::before {
+  text-shadow: 3px 3px 5px var(--color-shadow), -3px -3px 5px var(--color-white);
+  color: var(--check-radio-color);
+}
+input[type=radio]:disabled,
+input[type=checkbox]:disabled {
+  box-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
+}
+input[type=radio]:disabled::before,
+input[type=checkbox]:disabled::before {
+  text-shadow: 3px 3px 5px var(--color-shadow), -3px -3px 5px var(--color-white);
+  color: var(--color-bg);
+}
+
+/***************************************************** CHECKBOX *************************************************/
+input[type=checkbox] {
+  border-radius: calc(var(--ruler) * 1);
+}
+input[type=checkbox]::before, input[type=checkbox]:checked::before, input[type=checkbox]:disabled {
+  content: "";
+}
+
+/***************************************************** RADIO *****************************************************/
+input[type=radio] {
+  border-radius: 50%;
+}
+input[type=radio]::before, input[type=radio]:checked::before, input[type=radio]:disabled {
+  content: "";
+}
+
+/***************************************************** SELECT *****************************************************/
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper::after {
+  transition: var(--transition);
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: calc(var(--ruler) * 3);
+  font-weight: 600;
+  text-shadow: 1px 1px 2px var(--color-shadow), -1px -1px 2px var(--color-white);
+  color: var(--check-radio-color);
+  position: absolute;
+  right: 20px;
+  top: 5%;
+  z-index: 1;
+}
+.select-wrapper select {
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+  border-radius: var(--text-field-radius);
+  padding: var(--ruler);
+  background: transparent;
+  width: 100%;
+  box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
+  transition: var(--transition);
+}
+.select-wrapper select:focus {
+  box-shadow: inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
+}
+.select-wrapper select option {
+  background: var(--color-bg);
+}
+
+/***************************************************** CHECKBOX TYPE 2 *****************************************/
+input[type=checkbox].checkbox-type-2 {
+  box-shadow: inset 2px 2px 4px var(--color-shadow), inset -2px -2px 4px var(--color-white);
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 25px;
+  min-height: 25px;
+  background: transparent;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type=checkbox].checkbox-type-2::before {
+  transition: var(--transition);
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: calc(var(--ruler) * 2.5);
+  font-weight: bolder;
+  text-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
+  color: var(--color-bg);
+  position: relative;
+  left: -15px;
+}
+input[type=checkbox].checkbox-type-2:checked {
+  box-shadow: inset 2px 2px 4px var(--primary-color), inset -2px -2px 4px var(--primary-color);
+  background: var(--primary-color);
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 25px;
+  min-height: 25px;
+}
+input[type=checkbox].checkbox-type-2:checked::before {
+  left: 15px;
+}
+
+.with-hover {
+  transition: var(--transition);
+}
+
+.box-raised-1 {
+  box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+}
+.box-raised-1.with-hover:hover {
+  box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+}
+
+.box-raised-2 {
+  box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  /*********************************** SMALL ***********************************/
+}
+.box-raised-2.with-hover:hover {
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow), inset -3px -3px 7px var(--color-white);
+}
+.box-raised-2.sm {
+  box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+.box-raised-2.sm.with-hover:hover {
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
+}
+
+.box-raised-3 {
+  box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+}
+.box-raised-3.with-hover:hover {
+  box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+}
+
+.box-inset-1 {
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow), inset -3px -3px 7px var(--color-white);
+  /*********************************** SMALL ***********************************/
+}
+.box-inset-1.with-hover:hover {
+  box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+.box-inset-1.sm {
+  box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
+}
+.box-inset-1.sm.with-hover:hover {
+  box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--main-text-color);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--color-bg);
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=neumorphism-ui.css.map */

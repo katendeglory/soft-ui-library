@@ -11,8 +11,8 @@ textarea {
   appearance: none;
   border: 0;
   outline: 0;
-  transition: $transition;
-  color: $main-text-color;
+  transition: var(--transition);
+  color: var(--main-text-color);
 }
 
 /******************************************** TEXT FIELDS & BUTTONS ********************************************/
@@ -22,12 +22,12 @@ input[type="text"],
 input[type="password"],
 textarea {
   font-size: 16px;
-  border-radius: $text-field-radius;
-  padding: $ruler;
-  background-color: $color-bg;
+  border-radius: var(--text-field-radius);
+  padding: var(--ruler);
+  background-color: var(--color-bg);
   width: 100%;
   &::placeholder {
-    color: rgba($color: $main-text-color, $alpha: 0.5);
+    color: var(--main-text-color);
   }
 }
 
@@ -36,10 +36,10 @@ textarea {
 input[type="text"],
 input[type="password"],
 textarea {
-  box-shadow: inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+  box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
 
   &:focus {
-    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
   }
 }
 
@@ -47,15 +47,16 @@ textarea {
 
 .btn {
   display: block;
-  box-shadow: -5px -5px 20px $color-white, 5px 5px 20px $color-shadow;
+  box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   text-align: center;
+  width: auto;
 
   &:hover {
-    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
   }
 
   &:active {
-    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
   }
 
   i {
@@ -63,8 +64,12 @@ textarea {
   }
 
   &.btn-primary {
-    background: $primary-color;
+    background: var(--primary-color);
     color: #eee;
+  }
+
+  .btn-block {
+    width: 100%;
   }
 }
 /******************************************** BUTTONS, CHECKBOX & RADIO ******************************************/
@@ -79,11 +84,11 @@ input[type="checkbox"] {
 
 input[type="radio"],
 input[type="checkbox"] {
-  box-shadow: 2px 2px 4px $color-shadow, -2px -2px 4px $color-white;
-  max-width: $ruler * 2.5;
-  max-height: $ruler * 2.5;
-  min-width: $ruler * 2.5;
-  min-height: $ruler * 2.5;
+  box-shadow: 2px 2px 4px var(--color-shadow), -2px -2px 4px var(--color-white);
+  max-width: calc(var(--ruler) * 2.5);
+  max-height: calc(var(--ruler) * 2.5);
+  min-width: calc(var(--ruler) * 2.5);
+  min-height: calc(var(--ruler) * 2.5);
   background: transparent;
   margin-right: 10px;
   display: inline-flex;
@@ -91,28 +96,28 @@ input[type="checkbox"] {
   align-items: center;
 
   &::before {
-    transition: $transition;
+    transition: var(--transition);
     font-family: "Font Awesome 5 Free";
-    font-size: $ruler * 1.5;
+    font-size: calc(var(--ruler) * 1.5);
     font-weight: bolder;
-    text-shadow: -3px -3px 5px $color-shadow, 3px 3px 5px $color-white;
-    color: $color-bg;
+    text-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
+    color: var(--color-bg);
   }
 
   &:checked {
-    box-shadow: -3px -3px 5px $color-shadow, 3px 3px 5px $color-white;
+    box-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
     &::before {
-      text-shadow: 3px 3px 5px $color-shadow, -3px -3px 5px $color-white;
-      color: $check-radio-color;
+      text-shadow: 3px 3px 5px var(--color-shadow), -3px -3px 5px var(--color-white);
+      color: var(--check-radio-color);
     }
   }
 
   &:disabled {
-    box-shadow: -3px -3px 5px $color-shadow, 3px 3px 5px $color-white;
+    box-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
 
     &::before {
-      text-shadow: 3px 3px 5px $color-shadow, -3px -3px 5px $color-white;
-      color: $color-bg;
+      text-shadow: 3px 3px 5px var(--color-shadow), -3px -3px 5px var(--color-white);
+      color: var(--color-bg);
     }
   }
 }
@@ -120,7 +125,7 @@ input[type="checkbox"] {
 /***************************************************** CHECKBOX *************************************************/
 
 input[type="checkbox"] {
-  border-radius: $ruler * 1;
+  border-radius: calc(var(--ruler) * 1);
 
   &::before,
   &:checked::before,
@@ -147,14 +152,14 @@ input[type="radio"] {
   position: relative;
 
   &::after {
-    transition: $transition;
+    transition: var(--transition);
     font-family: "Font Awesome 5 Free";
     content: "\f107";
 
-    font-size: $ruler * 3;
+    font-size: calc(var(--ruler) * 3);
     font-weight: 600;
-    text-shadow: 1px 1px 2px $color-shadow, -1px -1px 2px $color-white;
-    color: $check-radio-color;
+    text-shadow: 1px 1px 2px var(--color-shadow), -1px -1px 2px var(--color-white);
+    color: var(--check-radio-color);
     position: absolute;
     right: 20px;
     top: 5%;
@@ -165,19 +170,61 @@ input[type="radio"] {
     position: relative;
     z-index: 2;
     font-size: 16px;
-    border-radius: $text-field-radius;
-    padding: $ruler;
+    border-radius: var(--text-field-radius);
+    padding: var(--ruler);
     background: transparent;
     width: 100%;
-    box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, 2px 2px 3px $color-shadow, -2px -2px 3px $color-white;
-    transition: $transition;
+    box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, 2px 2px 3px var(--color-shadow),
+      -2px -2px 3px var(--color-white);
+    transition: var(--transition);
 
     &:focus {
-      box-shadow: inset 2px 2px 3px $color-shadow, inset -2px -2px 3px $color-white;
+      box-shadow: inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
     }
 
     option {
-      background: $color-bg;
+      background: var(--color-bg);
+    }
+  }
+}
+
+/***************************************************** CHECKBOX TYPE 2 *****************************************/
+
+input[type="checkbox"] {
+  &.checkbox-type-2 {
+    box-shadow: inset 2px 2px 4px var(--color-shadow), inset -2px -2px 4px var(--color-white);
+    max-width: 50px;
+    min-width: 50px;
+    max-height: 25px;
+    min-height: 25px;
+    background: transparent;
+    margin-right: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      transition: var(--transition);
+      font-family: "Font Awesome 5 Free";
+      content: "\f111";
+      font-size: calc(var(--ruler) * 2.5);
+      font-weight: bolder;
+      text-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
+      color: var(--color-bg);
+      position: relative;
+      left: -15px;
+    }
+
+    &:checked {
+      box-shadow: inset 2px 2px 4px var(--primary-color), inset -2px -2px 4px var(--primary-color);
+      background: var(--primary-color);
+      max-width: 50px;
+      min-width: 50px;
+      max-height: 25px;
+      min-height: 25px;
+      &::before {
+        left: 15px;
+      }
     }
   }
 }

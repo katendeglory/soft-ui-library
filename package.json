@@ -8,7 +8,7 @@
     "email": "katendeglory@gmail.com"
   },
   "scripts": {
-    "watch": "sass --watch scss:css --style compressed",
+    "watch": "sass --watch scss:css",
     "compile": "sass scss:css --style compressed",
     "deploy": "git add . && git commit -am \"initial commit\" && git push -u origin master"
   }

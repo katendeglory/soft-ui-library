@@ -1,31 +1,28 @@
-$ruler: 13px;
-$dark-mode: false;
-
-//Shared Properties
-$primary-color: darken(#00a8ff, 5);
-$transition: all 0.35s ease-in-out;
+:root {
+  --ruler: 13px;
+  --transition: all 0.25s ease-in-out;
+}
 
 // Light Mode
-$color-bg: #ebecf0;
-$color-white: #fff;
-$color-shadow: rgba(
-  $color: #babecc,
-  $alpha: 0.9,
-);
-$main-text-color: #777;
-$text-field-radius: $ruler * 1;
-$check-radio-color: $primary-color;
 
-//Dark Mode
-@if ($dark-mode) {
-  $primary-color: darken(#00a8ff, 20);
-  $color-bg: #333333;
-  $color-white: #3b3b3b;
-  $color-shadow: rgba(
-    $color: #2b2b2b,
-    $alpha: 1,
-  );
-  $main-text-color: #aaa;
-  $text-field-radius: $ruler * 1;
-  $check-radio-color: $primary-color;
+.light-mode {
+  --primary-color: #{darken(#00a8ff, 5)};
+  --color-bg: #ebecf0;
+  --color-white: #fff;
+  --color-shadow: #{rgba($color: #babecc, $alpha: 0.9)};
+  --main-text-color: #777;
+  --text-field-radius: calc(var(--ruler) * 1);
+  --check-radio-color: var(--primary-color);
+}
+
+// Dark Mode
+
+.dark-mode {
+  --primary-color: #{darken(#00a8ff, 10)};
+  --color-bg: #333333;
+  --color-white: #3b3b3b;
+  --color-shadow: #{rgba($color: #2b2b2b, $alpha: 1)};
+  --main-text-color: #aaa;
+  --text-field-radius: calc(var(--ruler) * 1);
+  --check-radio-color: var(--primary-color);
 }

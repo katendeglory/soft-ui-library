@@ -12,12 +12,15 @@
   <title>Neumorphism UI</title>
 </head>
 
-<body>
+<body class="light-mode">
 
   <header class="box-raised-2 sm">
     <div class="nav-container">
-      <img src="https://cdn3.iconfinder.com/data/icons/education-and-school-8/48/Idea-128.png" alt="">
-      <h2>Soft UI Design</h2>
+      <div class="brand-logo">
+        <img src="https://cdn3.iconfinder.com/data/icons/education-and-school-8/48/Idea-128.png" alt="">
+        <h2>Soft UI Design</h2>
+      </div>
+      <input class="checkbox-type-2" type="checkbox" name="checkbox-3" id="mode-toggler">
     </div>
   </header>
 
@@ -41,7 +44,6 @@
     </div>
 
     <div class="center-flex">
-
       <a class="select-wrapper" for="select-el">
         <select name="select" id="select-el">
           <option value="option-1">Option 1</option>
@@ -61,6 +63,31 @@
     <div class="box-raised-3 with-hover">.box-raised-3 .with-hover</div>
     <div class="box-inset-1 with-hover">.box-inset-1 .with-hover</div>
   </div>
+
+  <script>
+    const root = document.documentElement;
+    const toggler = document.getElementById('mode-toggler');
+
+    toggler.addEventListener('change', e => {
+      if (e.target.checked) {
+        root.style.setProperty('--transition', "0ms");
+        document.body.classList.replace('light-mode', 'dark-mode');
+
+        setTimeout(() => {
+          root.style.setProperty('--transition', "all 0.25s ease-in-out");
+        }, 1000);
+      }
+      else {
+        root.style.setProperty('--transition', "0ms");
+        document.body.classList.replace('dark-mode', 'light-mode');
+
+        setTimeout(() => {
+          root.style.setProperty('--transition', "all 0.25s ease-in-out");
+        }, 1000);
+      }
+    });
+
+  </script>
 
 </body>
 
