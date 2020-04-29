@@ -312,7 +312,7 @@ header {
 .sul-link::before {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -3px;
   left: 0;
   width: 0;
   height: 2px;
