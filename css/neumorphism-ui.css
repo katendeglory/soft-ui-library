@@ -52,6 +52,7 @@
 .sul-btn::placeholder,
 .sul-text-field::placeholder {
   color: var(--main-text-color);
+  opacity: 0.5;
 }
 
 /************************************************* TEXT FIELDS *************************************************/
