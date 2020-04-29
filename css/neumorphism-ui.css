@@ -239,26 +239,25 @@
 .sul-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
+}
+.sul-range::-webkit-slider-thumb {
   min-width: calc(var(--ruler) * 3.5);
   min-height: calc(var(--ruler) * 3.5);
   max-width: calc(var(--ruler) * 3.5);
   max-height: calc(var(--ruler) * 3.5);
   border: none;
   border-radius: 50%;
-  background: red;
   box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
   background: var(--color-bg);
   cursor: pointer;
 }
 .sul-range::-moz-range-thumb {
-  appearance: none;
   min-width: calc(var(--ruler) * 3.5);
   min-height: calc(var(--ruler) * 3.5);
   max-width: calc(var(--ruler) * 3.5);
   max-height: calc(var(--ruler) * 3.5);
   border: none;
   border-radius: 50%;
-  background: red;
   box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
   background: var(--color-bg);
   cursor: pointer;
