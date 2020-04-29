@@ -1,3 +1,2 @@
-"# Documentation 👇" 
 
-https://katendeglory.github.io/soft-ui-library/
+[📚 Documentation](https://katendeglory.github.io/soft-ui-library/) 
