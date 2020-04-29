@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   background-color: var(--color-bg);
   color: var(--main-text-color);
 }
@@ -18,17 +19,12 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 header {
   background-color: var(--color-bg);
-}
-
-* {
-  font-family: "Rubik", sans-serif;
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
 }
 
 .sul-link {

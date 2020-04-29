@@ -59,4 +59,9 @@ form .form-section label {
   place-items: center;
 }
 
+code {
+  font-size: 15px;
+  background: var(--color-bg) !important;
+}
+
 /*# sourceMappingURL=style.css.map */

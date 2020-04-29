@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
   <link rel="stylesheet" href="css/neumorphism-ui.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/education-and-school-8/48/Idea-128.png"
-    type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/highlight.min.js"></script>
   <title>Neumorphism UI</title>
 </head>
 
@@ -16,8 +17,7 @@
   <header class="sul-box-raised-2 sm">
     <div class="nav-container">
       <div class="brand">
-        <img class="brand-logo" src="https://cdn3.iconfinder.com/data/icons/education-and-school-8/48/Idea-128.png"
-          alt="">
+        <img class="brand-logo" src="img/favicon.webp" alt="logo" />
         <h2 class="brand-text">Soft UI Design</h2>
       </div>
       <input class="sul-checkbox-type-2" type="checkbox" id="mode-toggler">
@@ -46,6 +46,26 @@
     </div>
 
     <div class="form-section">
+      <pre>
+        <code class="hljs html sul-box-raised-2 with-hover sm">
+    &lt;input type="text" class="sul-text-field" placeholder="Text Fied" /&gt;
+    &lt;input type="password" class="sul-text-field" placeholder="Password Field" /&gt;
+
+    &lt;a class="sul-btn"&gt;
+      &lt;i class="fas fa-sign-in-alt"&gt;&lt;/i&gt; 
+      Button
+    &lt;/a&gt;
+
+    &lt;a class="sul-btn btn-primary"&gt;
+      &lt;i class="fas fa-sign-in-alt"&gt;&lt;/i&gt; 
+      Button Primary
+    &lt;/a&gt;
+        </code>
+      </pre>
+    </div>
+
+
+    <div class="form-section">
       <label><input type="checkbox" class="sul-checkbox-type-1"> Checkbox Type 1</label>
       <label><input type="checkbox" class="sul-checkbox-type-1"> Checkbox Type 1</label>
       <label><input type="checkbox" class="sul-checkbox-type-1"> Checkbox Type 1</label>
@@ -61,6 +81,24 @@
       <label><input type="radio" class="sul-radio" name="radio"> Radio Button</label>
       <label><input type="radio" class="sul-radio" name="radio"> Radio Button</label>
       <label><input type="radio" class="sul-radio" name="radio"> Radio Button</label>
+    </div>
+
+    <div class="form-section">
+      <pre>
+        <code class="hljs html sul-box-raised-2 with-hover sm">
+    &lt;input type="checkbox" class="sul-checkbox-type-1"&gt; Checkbox Type 1
+    &lt;input type="checkbox" class="sul-checkbox-type-1"&gt; Checkbox Type 1
+    &lt;input type="checkbox" class="sul-checkbox-type-1"&gt; Checkbox Type 1
+    
+    &lt;input type="checkbox" class="sul-checkbox-type-2"&gt; Checkbox Type 2
+    &lt;input type="checkbox" class="sul-checkbox-type-2"&gt; Checkbox Type 2
+    &lt;input type="checkbox" class="sul-checkbox-type-2"&gt; Checkbox Type 2
+    
+    &lt;input type="radio" class="sul-radio" name="radio"&gt; Radio Button
+    &lt;input type="radio" class="sul-radio" name="radio"&gt; Radio Button
+    &lt;input type="radio" class="sul-radio" name="radio"&gt; Radio Button
+        </code>
+      </pre>
     </div>
 
     <div class="form-section">
@@ -82,6 +120,7 @@
   </div>
 
   <script src="js/index.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>
