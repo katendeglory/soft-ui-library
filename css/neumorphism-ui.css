@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
 :root {
   --ruler: 13px;
-  --transition: all 0.4s ease-in-out;
+  --transition: all 0.75s ease-in-out;
   --main-font: "Rubik", sans-serif;
 }
 
@@ -224,6 +224,44 @@
 }
 .sul-checkbox-type-2:checked::before {
   left: 15px;
+}
+
+/***************************************************** RANGE *****************************************************/
+.sul-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: calc(var(--ruler) * 2.5);
+  background: var(--color-bg);
+  outline: none;
+  border-radius: calc(var(--ruler) * 1);
+  box-shadow: inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
+}
+.sul-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: calc(var(--ruler) * 3.5);
+  min-height: calc(var(--ruler) * 3.5);
+  max-width: calc(var(--ruler) * 3.5);
+  max-height: calc(var(--ruler) * 3.5);
+  border: none;
+  border-radius: 50%;
+  background: red;
+  box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
+  background: var(--color-bg);
+  cursor: pointer;
+}
+.sul-range::-moz-range-thumb {
+  appearance: none;
+  min-width: calc(var(--ruler) * 3.5);
+  min-height: calc(var(--ruler) * 3.5);
+  max-width: calc(var(--ruler) * 3.5);
+  max-height: calc(var(--ruler) * 3.5);
+  border: none;
+  border-radius: 50%;
+  background: red;
+  box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
+  background: var(--color-bg);
+  cursor: pointer;
 }
 
 .with-hover {
