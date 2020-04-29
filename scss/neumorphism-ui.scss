@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
-
 @import "variables";
 @import "form";
 @import "box";
@@ -10,9 +8,13 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--main-font);
   background-color: var(--color-bg);
   color: var(--main-text-color);
+
+  .sul-text-field {
+    font-family: var(--main-font);
+  }
 }
 
 *,

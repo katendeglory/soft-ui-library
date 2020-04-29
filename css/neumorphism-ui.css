@@ -3,6 +3,7 @@
 :root {
   --ruler: 13px;
   --transition: all 0.4s ease-in-out;
+  --main-font: "Rubik", sans-serif;
 }
 
 .light-mode {
@@ -279,9 +280,12 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--main-font);
   background-color: var(--color-bg);
   color: var(--main-text-color);
+}
+body .sul-text-field {
+  font-family: var(--main-font);
 }
 
 *,
