@@ -13,87 +13,77 @@
 </head>
 
 <body class="light-mode">
-  <header class="box-raised-2 sm">
+  <header class="sul-box-raised-2 sm">
     <div class="nav-container">
-      <div class="brand-logo">
-        <img src="https://cdn3.iconfinder.com/data/icons/education-and-school-8/48/Idea-128.png" alt="">
-        <h2>Soft UI Design</h2>
+      <div class="brand">
+        <img class="brand-logo" src="https://cdn3.iconfinder.com/data/icons/education-and-school-8/48/Idea-128.png"
+          alt="">
+        <h2 class="brand-text">Soft UI Design</h2>
       </div>
-      <input class="checkbox-type-2" type="checkbox" name="checkbox-3" id="mode-toggler">
+      <input class="sul-checkbox-type-2" type="checkbox" id="mode-toggler">
     </div>
   </header>
 
+  <p>Simply add the css
+    <a href="https://raw.githubusercontent.com/katendeglory/soft-ui-library/master/css/neumorphism-ui.css"
+      class="sul-link" target="_blank">here</a>
+    in your project and you're good to go
+  </p>
+
   <form>
-    <input type="text" placeholder="Text Fied" />
-    <input type="password" placeholder="Password Field" />
-    <a class="btn"><i class="fas fa-sign-in-alt"></i> Button</a>
-    <a class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Button Primary</a>
-
-    <div class="center-flex">
-      <label><input type="checkbox" name="checkbox-1" disabled> Checkbox Disabled</label>
-      <label><input type="checkbox" name="checkbox-2"> Checkbox 1</label>
-      <label><input type="checkbox" name="checkbox-3"> Checkbox 2</label>
+    <div class="form-section">
+      <input type="text" class="sul-text-field" placeholder="Text Fied" />
     </div>
 
-    <div class="center-flex">
-      <!-- <label><input type="checkbox" class="checbox-type-2" name="checkbox-1" disabled> Checkbox Disabled</label> -->
-      <label><input type="checkbox" class="checkbox-type-2" name="checkbox-2"> Checkbox Type 2</label>
-      <label><input type="checkbox" class="checkbox-type-2" name="checkbox-2"> Checkbox Type 2</label>
-      <label><input type="checkbox" class="checkbox-type-2" name="checkbox-3"> Checkbox Type 2</label>
+    <div class="form-section">
+      <input type="password" class="sul-text-field" placeholder="Password Field" />
     </div>
 
-    <div class="center-flex">
-      <label><input type="radio" name="radio" disabled> Radio Button Disabled</label>
-      <label><input type="radio" name="radio"> Radio Button 1</label>
-      <label><input type="radio" name="radio"> Radio Button 2</label>
+    <div class="form-section">
+      <a class="sul-btn"><i class="fas fa-sign-in-alt"></i> Button</a>
     </div>
 
-    <div class="center-flex">
-      <a class="select-wrapper" for="select-el">
-        <select name="select" id="select-el">
+    <div class="form-section">
+      <a class="sul-btn btn-primary"><i class="fas fa-sign-in-alt"></i> Button Primary</a>
+    </div>
+
+    <div class="form-section">
+      <label><input type="checkbox" class="sul-checkbox-type-1"> Checkbox Type 1</label>
+      <label><input type="checkbox" class="sul-checkbox-type-1"> Checkbox Type 1</label>
+      <label><input type="checkbox" class="sul-checkbox-type-1"> Checkbox Type 1</label>
+    </div>
+
+    <div class="form-section">
+      <label><input type="checkbox" class="sul-checkbox-type-2"> Checkbox Type 2</label>
+      <label><input type="checkbox" class="sul-checkbox-type-2"> Checkbox Type 2</label>
+      <label><input type="checkbox" class="sul-checkbox-type-2"> Checkbox Type 2</label>
+    </div>
+
+    <div class="form-section">
+      <label><input type="radio" class="sul-radio" name="radio"> Radio Button</label>
+      <label><input type="radio" class="sul-radio" name="radio"> Radio Button</label>
+      <label><input type="radio" class="sul-radio" name="radio"> Radio Button</label>
+    </div>
+
+    <div class="form-section">
+      <label class="sul-select-wrapper" for="select-el">
+        <select name="select" class="sul-select" id="select-el">
           <option value="option-1">Option 1</option>
           <option value="option-2">Option 2</option>
           <option value="option-3">Option 3</option>
-          <option value="option-4">Option 4</option>
-          <option value="option-5">Option 5</option>
         </select>
-      </a>
+      </label>
     </div>
-
   </form>
 
-  <div class="box-container">
-    <div class="box-raised-1 with-hover">.box-raised-1 .with-hover</div>
-    <div class="box-raised-2 with-hover">.box-raised-2 .with-hover</div>
-    <div class="box-raised-3 with-hover">.box-raised-3 .with-hover</div>
-    <div class="box-inset-1 with-hover">.box-inset-1 .with-hover</div>
+  <div class="grid-container">
+    <div class="sul-box-raised-1 with-hover">.box-raised-1 .with-hover</div>
+    <div class="sul-box-raised-2 with-hover">.box-raised-2 .with-hover</div>
+    <div class="sul-box-raised-3 with-hover">.box-raised-3 .with-hover</div>
+    <div class="sul-box-inset-1 with-hover">.box-inset-1 .with-hover</div>
   </div>
 
-  <script>
-    const root = document.documentElement;
-    const toggler = document.getElementById('mode-toggler');
-
-    toggler.addEventListener('change', e => {
-      if (e.target.checked) {
-        root.style.setProperty('--transition', "0ms");
-        document.body.classList.replace('light-mode', 'dark-mode');
-
-        setTimeout(() => {
-          root.style.setProperty('--transition', "all 0.25s ease-in-out");
-        }, 1000);
-      }
-      else {
-        root.style.setProperty('--transition', "0ms");
-        document.body.classList.replace('dark-mode', 'light-mode');
-
-        setTimeout(() => {
-          root.style.setProperty('--transition', "all 0.25s ease-in-out");
-        }, 1000);
-      }
-    });
-
-  </script>
-
+  <script src="js/index.js"></script>
 </body>
 
 </html>

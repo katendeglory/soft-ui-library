@@ -2,15 +2,19 @@
   transition: var(--transition);
 }
 
-.box-raised-1 {
+.sul-box-raised-1 {
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
 
   &.with-hover:hover {
     box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
   }
+
+  /*********************************** SMALL ***********************************/
+
+  // TODO: SMALL
 }
 
-.box-raised-2 {
+.sul-box-raised-2 {
   box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent,
     inset 0 0 0 transparent;
 
@@ -30,15 +34,19 @@
   }
 }
 
-.box-raised-3 {
+.sul-box-raised-3 {
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
 
   &.with-hover:hover {
     box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   }
+
+  /*********************************** SMALL ***********************************/
+
+  // TODO: SMALL
 }
 
-.box-inset-1 {
+.sul-box-inset-1 {
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow),
     inset -3px -3px 7px var(--color-white);
 

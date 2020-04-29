@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
 :root {
   --ruler: 13px;
-  --transition: all 0.25s ease-in-out;
+  --transition: all 0.4s ease-in-out;
 }
 
 .light-mode {
@@ -26,13 +26,12 @@
 }
 
 /********************************************* COMMON PROPERTIES *********************************************/
-.btn,
-input[type=text],
-input[type=password],
-input[type=checkbox],
-input[type=radio],
-select,
-textarea {
+.sul-btn,
+.sul-text-field,
+.sul-checkbox-type-1,
+.sul-checkbox-type-2,
+.sul-radio,
+.sul-select {
   -webkit-appearance: none;
   appearance: none;
   border: 0;
@@ -42,69 +41,62 @@ textarea {
 }
 
 /******************************************** TEXT FIELDS & BUTTONS ********************************************/
-.btn,
-input[type=text],
-input[type=password],
-textarea {
+.sul-btn,
+.sul-text-field {
   font-size: 16px;
   border-radius: var(--text-field-radius);
   padding: var(--ruler);
   background-color: var(--color-bg);
   width: 100%;
 }
-.btn::placeholder,
-input[type=text]::placeholder,
-input[type=password]::placeholder,
-textarea::placeholder {
+.sul-btn::placeholder,
+.sul-text-field::placeholder {
   color: var(--main-text-color);
 }
 
 /************************************************* TEXT FIELDS *************************************************/
-input[type=text],
-input[type=password],
-textarea {
+.sul-text-field {
   box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
 }
-input[type=text]:focus,
-input[type=password]:focus,
-textarea:focus {
+.sul-text-field:focus {
   box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
 }
 
 /************************************************** BUTTONS **************************************************/
-.btn {
+.sul-btn {
   display: block;
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   text-align: center;
   width: auto;
 }
-.btn:hover {
+.sul-btn:hover {
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
 }
-.btn:active {
+.sul-btn:active {
   box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
 }
-.btn i {
+.sul-btn i {
   margin-right: 5px;
 }
-.btn.btn-primary {
+.sul-btn.btn-primary {
   background: var(--primary-color);
   color: #eee;
 }
-.btn .btn-block {
+.sul-btn .btn-block {
   width: 100%;
 }
 
 /******************************************** BUTTONS, CHECKBOX & RADIO ******************************************/
-.btn,
-input[type=radio],
-input[type=checkbox] {
+.sul-btn,
+.sul-radio,
+.sul-checkbox-type-1,
+.sul-checkbox-type-2 {
   cursor: pointer;
 }
 
 /*********************************************** CHECKBOX & RADIO ***********************************************/
-input[type=radio],
-input[type=checkbox] {
+.sul-radio,
+.sul-checkbox-type-1 {
   box-shadow: 2px 2px 4px var(--color-shadow), -2px -2px 4px var(--color-white);
   max-width: calc(var(--ruler) * 2.5);
   max-height: calc(var(--ruler) * 2.5);
@@ -116,8 +108,8 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
 }
-input[type=radio]::before,
-input[type=checkbox]::before {
+.sul-radio::before,
+.sul-checkbox-type-1::before {
   transition: var(--transition);
   font-family: "Font Awesome 5 Free";
   font-size: calc(var(--ruler) * 1.5);
@@ -125,46 +117,46 @@ input[type=checkbox]::before {
   text-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
   color: var(--color-bg);
 }
-input[type=radio]:checked,
-input[type=checkbox]:checked {
+.sul-radio:checked,
+.sul-checkbox-type-1:checked {
   box-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
 }
-input[type=radio]:checked::before,
-input[type=checkbox]:checked::before {
+.sul-radio:checked::before,
+.sul-checkbox-type-1:checked::before {
   text-shadow: 3px 3px 5px var(--color-shadow), -3px -3px 5px var(--color-white);
   color: var(--check-radio-color);
 }
-input[type=radio]:disabled,
-input[type=checkbox]:disabled {
+.sul-radio:disabled,
+.sul-checkbox-type-1:disabled {
   box-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
 }
-input[type=radio]:disabled::before,
-input[type=checkbox]:disabled::before {
+.sul-radio:disabled::before,
+.sul-checkbox-type-1:disabled::before {
   text-shadow: 3px 3px 5px var(--color-shadow), -3px -3px 5px var(--color-white);
   color: var(--color-bg);
 }
 
 /***************************************************** CHECKBOX *************************************************/
-input[type=checkbox] {
+.sul-checkbox-type-1 {
   border-radius: calc(var(--ruler) * 1);
 }
-input[type=checkbox]::before, input[type=checkbox]:checked::before, input[type=checkbox]:disabled {
+.sul-checkbox-type-1::before, .sul-checkbox-type-1:checked::before, .sul-checkbox-type-1:disabled {
   content: "";
 }
 
 /***************************************************** RADIO *****************************************************/
-input[type=radio] {
+.sul-radio {
   border-radius: 50%;
 }
-input[type=radio]::before, input[type=radio]:checked::before, input[type=radio]:disabled {
+.sul-radio::before, .sul-radio:checked::before, .sul-radio:disabled {
   content: "";
 }
 
 /***************************************************** SELECT *****************************************************/
-.select-wrapper {
+.sul-select-wrapper {
   position: relative;
 }
-.select-wrapper::after {
+.sul-select-wrapper::after {
   transition: var(--transition);
   font-family: "Font Awesome 5 Free";
   content: "";
@@ -177,7 +169,7 @@ input[type=radio]::before, input[type=radio]:checked::before, input[type=radio]:
   top: 5%;
   z-index: 1;
 }
-.select-wrapper select {
+.sul-select-wrapper .sul-select {
   position: relative;
   z-index: 2;
   font-size: 16px;
@@ -188,15 +180,16 @@ input[type=radio]::before, input[type=radio]:checked::before, input[type=radio]:
   box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
   transition: var(--transition);
 }
-.select-wrapper select:focus {
+.sul-select-wrapper .sul-select:focus {
   box-shadow: inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
 }
-.select-wrapper select option {
+.sul-select-wrapper .sul-select option {
   background: var(--color-bg);
 }
 
 /***************************************************** CHECKBOX TYPE 2 *****************************************/
-input[type=checkbox].checkbox-type-2 {
+.sul-checkbox-type-2 {
+  border-radius: calc(var(--ruler) * 1);
   box-shadow: inset 2px 2px 4px var(--color-shadow), inset -2px -2px 4px var(--color-white);
   max-width: 50px;
   min-width: 50px;
@@ -208,7 +201,7 @@ input[type=checkbox].checkbox-type-2 {
   justify-content: center;
   align-items: center;
 }
-input[type=checkbox].checkbox-type-2::before {
+.sul-checkbox-type-2::before {
   transition: var(--transition);
   font-family: "Font Awesome 5 Free";
   content: "";
@@ -219,7 +212,7 @@ input[type=checkbox].checkbox-type-2::before {
   position: relative;
   left: -15px;
 }
-input[type=checkbox].checkbox-type-2:checked {
+.sul-checkbox-type-2:checked {
   box-shadow: inset 2px 2px 4px var(--primary-color), inset -2px -2px 4px var(--primary-color);
   background: var(--primary-color);
   max-width: 50px;
@@ -227,7 +220,7 @@ input[type=checkbox].checkbox-type-2:checked {
   max-height: 25px;
   min-height: 25px;
 }
-input[type=checkbox].checkbox-type-2:checked::before {
+.sul-checkbox-type-2:checked::before {
   left: 15px;
 }
 
@@ -235,53 +228,64 @@ input[type=checkbox].checkbox-type-2:checked::before {
   transition: var(--transition);
 }
 
-.box-raised-1 {
+.sul-box-raised-1 {
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+  /*********************************** SMALL ***********************************/
 }
-.box-raised-1.with-hover:hover {
+.sul-box-raised-1.with-hover:hover {
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
 }
 
-.box-raised-2 {
+.sul-box-raised-2 {
   box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
   /*********************************** SMALL ***********************************/
 }
-.box-raised-2.with-hover:hover {
+.sul-box-raised-2.with-hover:hover {
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow), inset -3px -3px 7px var(--color-white);
 }
-.box-raised-2.sm {
+.sul-box-raised-2.sm {
   box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
-.box-raised-2.sm.with-hover:hover {
+.sul-box-raised-2.sm.with-hover:hover {
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
 }
 
-.box-raised-3 {
+.sul-box-raised-3 {
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+  /*********************************** SMALL ***********************************/
 }
-.box-raised-3.with-hover:hover {
+.sul-box-raised-3.with-hover:hover {
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
 }
 
-.box-inset-1 {
+.sul-box-inset-1 {
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow), inset -3px -3px 7px var(--color-white);
   /*********************************** SMALL ***********************************/
 }
-.box-inset-1.with-hover:hover {
+.sul-box-inset-1.with-hover:hover {
   box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
-.box-inset-1.sm {
+.sul-box-inset-1.sm {
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
 }
-.box-inset-1.sm.with-hover:hover {
+.sul-box-inset-1.sm.with-hover:hover {
   box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--main-text-color);
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 header {
@@ -293,6 +297,29 @@ header {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+
+.sul-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  position: relative;
+}
+.sul-link:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.sul-link::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+}
+.sul-link:hover::before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=neumorphism-ui.css.map */

@@ -1,12 +1,11 @@
 /********************************************* COMMON PROPERTIES *********************************************/
 
-.btn,
-input[type="text"],
-input[type="password"],
-input[type="checkbox"],
-input[type="radio"],
-select,
-textarea {
+.sul-btn,
+.sul-text-field,
+.sul-checkbox-type-1,
+.sul-checkbox-type-2,
+.sul-radio,
+.sul-select {
   -webkit-appearance: none;
   appearance: none;
   border: 0;
@@ -17,10 +16,8 @@ textarea {
 
 /******************************************** TEXT FIELDS & BUTTONS ********************************************/
 
-.btn,
-input[type="text"],
-input[type="password"],
-textarea {
+.sul-btn,
+.sul-text-field {
   font-size: 16px;
   border-radius: var(--text-field-radius);
   padding: var(--ruler);
@@ -33,9 +30,7 @@ textarea {
 
 /************************************************* TEXT FIELDS *************************************************/
 
-input[type="text"],
-input[type="password"],
-textarea {
+.sul-text-field {
   box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
 
   &:focus {
@@ -45,7 +40,7 @@ textarea {
 
 /************************************************** BUTTONS **************************************************/
 
-.btn {
+.sul-btn {
   display: block;
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   text-align: center;
@@ -74,16 +69,17 @@ textarea {
 }
 /******************************************** BUTTONS, CHECKBOX & RADIO ******************************************/
 
-.btn,
-input[type="radio"],
-input[type="checkbox"] {
+.sul-btn,
+.sul-radio,
+.sul-checkbox-type-1,
+.sul-checkbox-type-2 {
   cursor: pointer;
 }
 
 /*********************************************** CHECKBOX & RADIO ***********************************************/
 
-input[type="radio"],
-input[type="checkbox"] {
+.sul-radio,
+.sul-checkbox-type-1 {
   box-shadow: 2px 2px 4px var(--color-shadow), -2px -2px 4px var(--color-white);
   max-width: calc(var(--ruler) * 2.5);
   max-height: calc(var(--ruler) * 2.5);
@@ -124,7 +120,7 @@ input[type="checkbox"] {
 
 /***************************************************** CHECKBOX *************************************************/
 
-input[type="checkbox"] {
+.sul-checkbox-type-1 {
   border-radius: calc(var(--ruler) * 1);
 
   &::before,
@@ -136,7 +132,7 @@ input[type="checkbox"] {
 
 /***************************************************** RADIO *****************************************************/
 
-input[type="radio"] {
+.sul-radio {
   border-radius: 50%;
 
   &::before,
@@ -148,7 +144,7 @@ input[type="radio"] {
 
 /***************************************************** SELECT *****************************************************/
 
-.select-wrapper {
+.sul-select-wrapper {
   position: relative;
 
   &::after {
@@ -166,7 +162,7 @@ input[type="radio"] {
     z-index: 1;
   }
 
-  select {
+  .sul-select {
     position: relative;
     z-index: 2;
     font-size: 16px;
@@ -190,41 +186,40 @@ input[type="radio"] {
 
 /***************************************************** CHECKBOX TYPE 2 *****************************************/
 
-input[type="checkbox"] {
-  &.checkbox-type-2 {
-    box-shadow: inset 2px 2px 4px var(--color-shadow), inset -2px -2px 4px var(--color-white);
+.sul-checkbox-type-2 {
+  border-radius: calc(var(--ruler) * 1);
+  box-shadow: inset 2px 2px 4px var(--color-shadow), inset -2px -2px 4px var(--color-white);
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 25px;
+  min-height: 25px;
+  background: transparent;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    transition: var(--transition);
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-size: calc(var(--ruler) * 2.5);
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
+    color: var(--color-bg);
+    position: relative;
+    left: -15px;
+  }
+
+  &:checked {
+    box-shadow: inset 2px 2px 4px var(--primary-color), inset -2px -2px 4px var(--primary-color);
+    background: var(--primary-color);
     max-width: 50px;
     min-width: 50px;
     max-height: 25px;
     min-height: 25px;
-    background: transparent;
-    margin-right: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
     &::before {
-      transition: var(--transition);
-      font-family: "Font Awesome 5 Free";
-      content: "\f111";
-      font-size: calc(var(--ruler) * 2.5);
-      font-weight: bolder;
-      text-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
-      color: var(--color-bg);
-      position: relative;
-      left: -15px;
-    }
-
-    &:checked {
-      box-shadow: inset 2px 2px 4px var(--primary-color), inset -2px -2px 4px var(--primary-color);
-      background: var(--primary-color);
-      max-width: 50px;
-      min-width: 50px;
-      max-height: 25px;
-      min-height: 25px;
-      &::before {
-        left: 15px;
-      }
+      left: 15px;
     }
   }
 }
