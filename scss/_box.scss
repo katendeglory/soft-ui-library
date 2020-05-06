@@ -3,9 +3,11 @@
 }
 
 .sul-box-raised-1 {
+  background-color: var(--color-bg);
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
 
   &.with-hover:hover {
+    background-color: var(--color-bg);
     box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
   }
 
@@ -15,19 +17,23 @@
 }
 
 .sul-box-raised-2 {
+  background-color: var(--color-bg);
   box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent,
     inset 0 0 0 transparent;
 
   &.with-hover:hover {
+    background-color: var(--color-bg);
     box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow),
       inset -3px -3px 7px var(--color-white);
   }
 
   /*********************************** SMALL ***********************************/
   &.sm {
+    background-color: var(--color-bg);
     box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent,
       inset 0 0 0 transparent;
     &.with-hover:hover {
+      background-color: var(--color-bg);
       box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow),
         inset -2px -2px 3px var(--color-white);
     }
@@ -35,9 +41,11 @@
 }
 
 .sul-box-raised-3 {
+  background-color: var(--color-bg);
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
 
   &.with-hover:hover {
+    background-color: var(--color-bg);
     box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   }
 
@@ -47,19 +55,23 @@
 }
 
 .sul-box-inset-1 {
+  background-color: var(--color-bg);
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow),
     inset -3px -3px 7px var(--color-white);
 
   &.with-hover:hover {
+    background-color: var(--color-bg);
     box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent,
       inset 0 0 0 transparent;
   }
 
   /*********************************** SMALL ***********************************/
   &.sm {
+    background-color: var(--color-bg);
     box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow),
       inset -2px -2px 3px var(--color-white);
     &.with-hover:hover {
+      background-color: var(--color-bg);
       box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent,
         inset 0 0 0 transparent;
     }

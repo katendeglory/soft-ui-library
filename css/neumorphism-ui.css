@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import url("https://fonts.googleapis.com/css?family=Rubik|Poppins:300&display=swap");
 :root {
   --ruler: 13px;
@@ -268,46 +269,58 @@
 }
 
 .sul-box-raised-1 {
+  background-color: var(--color-bg);
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   /*********************************** SMALL ***********************************/
 }
 .sul-box-raised-1.with-hover:hover {
+  background-color: var(--color-bg);
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
 }
 
 .sul-box-raised-2 {
+  background-color: var(--color-bg);
   box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
   /*********************************** SMALL ***********************************/
 }
 .sul-box-raised-2.with-hover:hover {
+  background-color: var(--color-bg);
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow), inset -3px -3px 7px var(--color-white);
 }
 .sul-box-raised-2.sm {
+  background-color: var(--color-bg);
   box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 .sul-box-raised-2.sm.with-hover:hover {
+  background-color: var(--color-bg);
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
 }
 
 .sul-box-raised-3 {
+  background-color: var(--color-bg);
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
   /*********************************** SMALL ***********************************/
 }
 .sul-box-raised-3.with-hover:hover {
+  background-color: var(--color-bg);
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
 }
 
 .sul-box-inset-1 {
+  background-color: var(--color-bg);
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow), inset -3px -3px 7px var(--color-white);
   /*********************************** SMALL ***********************************/
 }
 .sul-box-inset-1.with-hover:hover {
+  background-color: var(--color-bg);
   box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 .sul-box-inset-1.sm {
+  background-color: var(--color-bg);
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
 }
 .sul-box-inset-1.sm.with-hover:hover {
+  background-color: var(--color-bg);
   box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 
@@ -325,13 +338,21 @@ body .sul-text-field {
   font-family: var(--main-font);
 }
 
+h1,
+h2,
+h3,
+span,
+p,
+a {
+  font-weight: 300;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
-  font-weight: 300;
 }
 
 header {
