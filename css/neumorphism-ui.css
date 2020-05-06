@@ -1,9 +1,9 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik|Poppins:300&display=swap");
 :root {
   --ruler: 13px;
-  --transition: all 0.75s ease-in-out;
-  --main-font: "Rubik", sans-serif;
+  --transition: all 0.25s ease-in-out;
+  --main-font: "Poppins", "Rubik", sans-serif;
 }
 
 .light-mode {
@@ -331,6 +331,7 @@ body .sul-text-field {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+  font-weight: 300;
 }
 
 header {
@@ -358,6 +359,16 @@ header {
 }
 .sul-link:hover::before {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=neumorphism-ui.css.map */

@@ -23,6 +23,7 @@ body {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+  font-weight: 300;
 }
 
 header {
@@ -52,5 +53,15 @@ header {
 
   &:hover::before {
     width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
   }
 }

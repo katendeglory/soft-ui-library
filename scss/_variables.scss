@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik|Poppins:300&display=swap");
 
 :root {
   --ruler: 13px;
-  --transition: all 0.75s ease-in-out;
-  --main-font: "Rubik", sans-serif;
+  --transition: all 0.25s ease-in-out;
+  // --main-font: "Rubik", sans-serif;
+  --main-font: "Poppins", "Rubik", sans-serif;
 }
 
 // Theses modes will be applied to the body of the html document
