@@ -29,12 +29,8 @@
 }
 
 /********************************************* COMMON PROPERTIES *********************************************/
-.sul-btn,
-.sul-text-field,
-.sul-checkbox-type-1,
-.sul-checkbox-type-2,
-.sul-radio,
-.sul-select {
+
+.sul-btn, .sul-text-field, .sul-checkbox-type-1, .sul-checkbox-type-2, .sul-radio, .sul-select {
   -webkit-appearance: none;
   appearance: none;
   border: 0;
@@ -44,63 +40,69 @@
 }
 
 /******************************************** TEXT FIELDS & BUTTONS ********************************************/
-.sul-btn,
-.sul-text-field {
+
+.sul-btn, .sul-text-field {
   font-size: 16px;
   border-radius: var(--text-field-radius);
   padding: var(--ruler);
   background-color: var(--color-bg);
   width: 100%;
 }
-.sul-btn::placeholder,
-.sul-text-field::placeholder {
+
+.sul-btn::placeholder, .sul-text-field::placeholder {
   color: var(--main-text-color);
   opacity: 0.5;
 }
 
 /************************************************* TEXT FIELDS *************************************************/
+
 .sul-text-field {
   box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
 }
+
 .sul-text-field:focus {
   box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
 }
 
 /************************************************** BUTTONS **************************************************/
+
 .sul-btn {
   display: block;
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   text-align: center;
   width: auto;
 }
+
 .sul-btn:hover {
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
 }
+
 .sul-btn:active {
   box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
 }
+
 .sul-btn i {
   margin-right: 5px;
 }
+
 .sul-btn.btn-primary {
   background: var(--primary-color);
   color: #eee;
 }
+
 .sul-btn .btn-block {
   width: 100%;
 }
 
 /******************************************** BUTTONS, CHECKBOX & RADIO ******************************************/
-.sul-btn,
-.sul-radio,
-.sul-checkbox-type-1,
-.sul-checkbox-type-2 {
+
+.sul-btn, .sul-radio, .sul-checkbox-type-1, .sul-checkbox-type-2 {
   cursor: pointer;
 }
 
 /*********************************************** CHECKBOX & RADIO ***********************************************/
-.sul-radio,
-.sul-checkbox-type-1 {
+
+.sul-radio, .sul-checkbox-type-1 {
   box-shadow: 2px 2px 4px var(--color-shadow), -2px -2px 4px var(--color-white);
   max-width: calc(var(--ruler) * 2.5);
   max-height: calc(var(--ruler) * 2.5);
@@ -112,8 +114,8 @@
   justify-content: center;
   align-items: center;
 }
-.sul-radio::before,
-.sul-checkbox-type-1::before {
+
+.sul-radio::before, .sul-checkbox-type-1::before {
   transition: var(--transition);
   font-family: "Font Awesome 5 Free";
   font-size: calc(var(--ruler) * 1.5);
@@ -121,45 +123,51 @@
   text-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
   color: var(--color-bg);
 }
-.sul-radio:checked,
-.sul-checkbox-type-1:checked {
+
+.sul-radio:checked, .sul-checkbox-type-1:checked {
   box-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
 }
-.sul-radio:checked::before,
-.sul-checkbox-type-1:checked::before {
+
+.sul-radio:checked::before, .sul-checkbox-type-1:checked::before {
   text-shadow: 3px 3px 5px var(--color-shadow), -3px -3px 5px var(--color-white);
   color: var(--check-radio-color);
 }
-.sul-radio:disabled,
-.sul-checkbox-type-1:disabled {
+
+.sul-radio:disabled, .sul-checkbox-type-1:disabled {
   box-shadow: -3px -3px 5px var(--color-shadow), 3px 3px 5px var(--color-white);
 }
-.sul-radio:disabled::before,
-.sul-checkbox-type-1:disabled::before {
+
+.sul-radio:disabled::before, .sul-checkbox-type-1:disabled::before {
   text-shadow: 3px 3px 5px var(--color-shadow), -3px -3px 5px var(--color-white);
   color: var(--color-bg);
 }
 
 /***************************************************** CHECKBOX *************************************************/
+
 .sul-checkbox-type-1 {
   border-radius: calc(var(--ruler) * 1);
 }
+
 .sul-checkbox-type-1::before, .sul-checkbox-type-1:checked::before, .sul-checkbox-type-1:disabled {
   content: "";
 }
 
 /***************************************************** RADIO *****************************************************/
+
 .sul-radio {
   border-radius: 50%;
 }
+
 .sul-radio::before, .sul-radio:checked::before, .sul-radio:disabled {
   content: "";
 }
 
 /***************************************************** SELECT *****************************************************/
+
 .sul-select-wrapper {
   position: relative;
 }
+
 .sul-select-wrapper::after {
   transition: var(--transition);
   font-family: "Font Awesome 5 Free";
@@ -173,6 +181,7 @@
   top: 5%;
   z-index: 1;
 }
+
 .sul-select-wrapper .sul-select {
   position: relative;
   z-index: 2;
@@ -184,14 +193,17 @@
   box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white);
   transition: var(--transition);
 }
+
 .sul-select-wrapper .sul-select:focus {
   box-shadow: inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
 }
+
 .sul-select-wrapper .sul-select option {
   background: var(--color-bg);
 }
 
 /***************************************************** CHECKBOX TYPE 2 *****************************************/
+
 .sul-checkbox-type-2 {
   border-radius: calc(var(--ruler) * 1);
   box-shadow: inset 2px 2px 4px var(--color-shadow), inset -2px -2px 4px var(--color-white);
@@ -205,6 +217,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .sul-checkbox-type-2::before {
   transition: var(--transition);
   font-family: "Font Awesome 5 Free";
@@ -216,6 +229,7 @@
   position: relative;
   left: -15px;
 }
+
 .sul-checkbox-type-2:checked {
   box-shadow: inset 2px 2px 4px var(--primary-color), inset -2px -2px 4px var(--primary-color);
   background: var(--primary-color);
@@ -224,11 +238,13 @@
   max-height: 25px;
   min-height: 25px;
 }
+
 .sul-checkbox-type-2:checked::before {
   left: 15px;
 }
 
 /***************************************************** RANGE *****************************************************/
+
 .sul-range {
   -webkit-appearance: none;
   width: 100%;
@@ -238,10 +254,12 @@
   border-radius: calc(var(--ruler) * 1);
   box-shadow: inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
 }
+
 .sul-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
 }
+
 .sul-range::-webkit-slider-thumb {
   min-width: calc(var(--ruler) * 3.5);
   min-height: calc(var(--ruler) * 3.5);
@@ -253,6 +271,7 @@
   background: var(--color-bg);
   cursor: pointer;
 }
+
 .sul-range::-moz-range-thumb {
   min-width: calc(var(--ruler) * 3.5);
   min-height: calc(var(--ruler) * 3.5);
@@ -274,6 +293,7 @@
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
   /*********************************** SMALL ***********************************/
 }
+
 .sul-box-raised-1.with-hover:hover {
   background-color: var(--color-bg);
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
@@ -284,14 +304,17 @@
   box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
   /*********************************** SMALL ***********************************/
 }
+
 .sul-box-raised-2.with-hover:hover {
   background-color: var(--color-bg);
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow), inset -3px -3px 7px var(--color-white);
 }
+
 .sul-box-raised-2.sm {
   background-color: var(--color-bg);
   box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
+
 .sul-box-raised-2.sm.with-hover:hover {
   background-color: var(--color-bg);
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
@@ -302,6 +325,7 @@
   box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
   /*********************************** SMALL ***********************************/
 }
+
 .sul-box-raised-3.with-hover:hover {
   background-color: var(--color-bg);
   box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
@@ -312,14 +336,17 @@
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 3px 3px 7px var(--color-shadow), inset -3px -3px 7px var(--color-white);
   /*********************************** SMALL ***********************************/
 }
+
 .sul-box-inset-1.with-hover:hover {
   background-color: var(--color-bg);
   box-shadow: 3px 3px 7px var(--color-shadow), -3px -3px 7px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
+
 .sul-box-inset-1.sm {
   background-color: var(--color-bg);
   box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 2px 2px 3px var(--color-shadow), inset -2px -2px 3px var(--color-white);
 }
+
 .sul-box-inset-1.sm.with-hover:hover {
   background-color: var(--color-bg);
   box-shadow: 2px 2px 3px var(--color-shadow), -2px -2px 3px var(--color-white), inset 0 0 0 transparent, inset 0 0 0 transparent;
@@ -335,22 +362,16 @@ body {
   background-color: var(--color-bg);
   color: var(--main-text-color);
 }
+
 body .sul-text-field {
   font-family: var(--main-font);
 }
 
-h1,
-h2,
-h3,
-span,
-p,
-a {
+h1, h2, h3, span, p, a {
   font-weight: 300;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
@@ -365,10 +386,12 @@ header {
   text-decoration: none;
   position: relative;
 }
+
 .sul-link:visited {
   color: var(--primary-color);
   text-decoration: none;
 }
+
 .sul-link::before {
   content: "";
   position: absolute;
@@ -379,6 +402,7 @@ header {
   background-color: var(--primary-color);
   transition: 0.5s;
 }
+
 .sul-link:hover::before {
   width: 100%;
 }
@@ -388,6 +412,7 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
 a:hover {
   text-decoration: none;
   color: inherit;
