@@ -13,7 +13,7 @@
   --color-bg: #ebecf0;
   --color-white: #fff;
   --color-shadow: rgba(186, 190, 204, 0.9);
-  --main-text-color: #777;
+  --main-text-color: #333;
   --text-field-radius: calc(var(--ruler) * 1);
   --check-radio-color: var(--primary-color);
 }
