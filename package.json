@@ -1,6 +1,6 @@
 {
   "name": "soft-ui-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "author": {
@@ -18,5 +18,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/katendeglory/soft-ui-library"
-  }
+  },
+  "keywords": [
+    "soft design",
+    "neumorphism",
+    "css library"
+  ]
 }
