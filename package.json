@@ -1,6 +1,7 @@
 {
   "name": "soft-ui-library",
-  "version": "1.0.6",
+  "description": "A Collection of UI Elements implementing a neumorphic design pattern with light/dark mode toggle.",
+  "version": "1.0.7",
   "main": "index.js",
   "license": "MIT",
   "author": {
