@@ -1,6 +1,6 @@
 {
   "name": "soft-ui-library",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "license": "MIT",
   "author": {
@@ -17,6 +17,7 @@
     "type": "git",
     "url": "https://github.com/katendeglory/soft-ui-library"
   },
+  "homepage": "https://katendeglory.github.io/soft-ui-library/",
   "keywords": [
     "soft-ui",
     "soft ui",
