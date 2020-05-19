@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+soft-ui-library@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/soft-ui-library/-/soft-ui-library-1.0.1.tgz#355695bcaeccde19740bf6e9c592225a42a3d5fd"
+  integrity sha512-HpAYvL6P4oA7V8rSIdFjvtkckplGDykduwJoVvZ5CjLKKLqBkrCOQ2TXtKguZFN28/CcE8BiZANMY2+dU/C2Yw==
