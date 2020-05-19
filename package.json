@@ -1,5 +1,5 @@
 {
-  "name": "neumorphism-scss",
+  "name": "soft-ui-library",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,5 +12,9 @@
     "sass-compile": "sass scss:css --style compressed",
     "deploy": "git add . && git commit -am \"initial commit\" && git push -u origin master"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katendeglory/soft-ui-library"
+  }
 }
