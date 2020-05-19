@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/styles/atom-one-dark.min.css">
-  <link rel="stylesheet" href="css/neumorphism-ui.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="dist/css/neumorphism-ui.css">
+  <link rel="stylesheet" href="dist/css/style.css">
   <title>Neumorphism UI</title>
 </head>
 
-<body class="light-mode">
+<body class="dark-mode">
   <header class="sul-box-raised-2 sm">
     <div class="nav-container">
       <div class="brand">
@@ -22,11 +22,31 @@
     </div>
   </header>
 
-  <p style="line-height: 1.75rem;">Copy the css
-    <a href="css/neumorphism-ui.css" class="sul-link" target="_blank">here</a> in your project and you're good to go 👍
-  </p>
+  <div class="block-section">
+    <h2 class="title-section">CSS</h2>
+    <p style="line-height: 1.75rem;">Copy the css
+      <a href="dist/css/neumorphism-ui.css" class="sul-link" target="_blank">here</a> in your project and you're good to
+      go 👍
+    </p>
+  </div>
+
+  <h2 class="title-section">NPM</h2>
+  <div class="block-section">
+    <pre>
+      <code class="hljs js sul-box-raised-2 sm">
+    npm run soft-ui-library 
+      </code>
+    </pre>
+    And import the content of the directory below to your project <br>
+    <pre>
+      <code class="hljs js sul-box-raised-2 sm">
+    node_modules/soft-ui-library/dist/css/neumorphism-ui.css
+      </code>
+    </pre>
+  </div>
 
   <form>
+    <h2 class="title-section">Text Fields</h2>
     <div class="block-section">
       <input type="text" class="sul-text-field" placeholder="Text Fied" />
     </div>
@@ -39,6 +59,7 @@
       <textarea class="sul-text-field" rows="5" placeholder="Text Area Field"></textarea>
     </div>
 
+    <h2 class="title-section">Buttons</h2>
     <div class="block-section">
       <a class="sul-btn"><i class="fab fa-google-drive"></i> Button</a>
     </div>
@@ -68,7 +89,7 @@
       </pre>
     </div>
 
-
+    <h2 class="title-section">Check Boxes</h2>
     <div class="block-section">
       <label><input type="checkbox" class="sul-checkbox-type-1"> Checkbox Type 1</label>
       <label><input type="checkbox" class="sul-checkbox-type-1"> Checkbox Type 1</label>
@@ -81,6 +102,7 @@
       <label><input type="checkbox" class="sul-checkbox-type-2"> Checkbox Type 2</label>
     </div>
 
+    <h2 class="title-section" style="margin-top: 5rem;">Radio Buttons</h2>
     <div class="block-section">
       <label><input type="radio" class="sul-radio" name="radio"> Radio Button</label>
       <label><input type="radio" class="sul-radio" name="radio"> Radio Button</label>
@@ -105,6 +127,7 @@
       </pre>
     </div>
 
+    <h2 class="title-section">Select</h2>
     <div class="block-section">
       <label class="sul-select-wrapper" for="select-el">
         <select name="select" class="sul-select" id="select-el">
@@ -129,6 +152,7 @@
       </pre>
     </div>
 
+    <h2 class="title-section">Sliders</h2>
     <div class="block-section">
       <input type="range" class="sul-range">
     </div>
@@ -147,7 +171,7 @@
   </form>
 
 
-
+  <h2 class="title-section">Boxes</h2>
   <div class="grid-container">
     <div class="sul-box-raised-1 with-hover">.box-raised-1 .with-hover</div>
     <div class="sul-box-raised-2 with-hover">.box-raised-2 .with-hover</div>
@@ -177,6 +201,10 @@
     </pre>
   </div>
 
+  <h2 class="title-section" style="margin-bottom: 1rem;">Light/Dark Modes</h2>
+  <div class="block-section" style="line-height: 1.5;">
+    Set the classes dark-mode/light-mode to the html body to toggle.
+  </div>
 
   <footer class="footer">
     <span>

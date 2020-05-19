@@ -39,7 +39,7 @@ form .block-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 form .block-section label {
   display: flex;
@@ -69,6 +69,12 @@ code {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
+}
+
+.title-section {
+  margin-top: 3rem;
+  opacity: 0.6;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
