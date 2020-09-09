@@ -1,7 +1,7 @@
 {
   "name": "soft-ui-library",
   "description": "A Collection of UI Elements implementing a neumorphic design pattern with light/dark mode toggle.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "index.js",
   "license": "MIT",
   "author": {
@@ -11,7 +11,7 @@
   "scripts": {
     "sass-watch": "sass --watch dist/scss:dist/css",
     "sass-compile": "sass dist/scss:dist/css --style compressed",
-    "deploy": "git add . && git commit -am \"initial commit\" && git push -u origin master"
+    "git-deploy": "git add . && git commit -am \"initial commit\" && git push -u origin master"
   },
   "dependencies": {},
   "repository": {
@@ -20,11 +20,12 @@
   },
   "homepage": "https://katendeglory.github.io/soft-ui-library/",
   "keywords": [
-    "soft-ui",
     "soft ui",
+    "soft-ui",
+    "soft design",
+    "soft-design",
     "neumorphism",
     "neu-morphism",
-    "soft design",
     "css"
   ]
 }
