@@ -68,6 +68,7 @@
     width: 100%;
   }
 }
+
 /******************************************** BUTTONS, CHECKBOX & RADIO ******************************************/
 
 .sul-btn,
@@ -153,7 +154,7 @@
     font-family: "Font Awesome 5 Free";
     content: "\f107";
     font-size: calc(var(--ruler) * 3);
-    font-weight: 600;
+    font-weight: bolder;
     text-shadow: 1px 1px 2px var(--color-shadow), -1px -1px 2px var(--color-white);
     color: var(--check-radio-color);
     position: absolute;
@@ -168,7 +169,7 @@
     font-size: 16px;
     border-radius: var(--text-field-radius);
     padding: var(--ruler);
-    background: transparent;
+    background-color: var(--color-bg);
     width: 100%;
     box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, 2px 2px 3px var(--color-shadow),
       -2px -2px 3px var(--color-white);
@@ -179,7 +180,7 @@
     }
 
     option {
-      background: var(--color-bg);
+      background-color: var(--color-bg);
     }
   }
 }
@@ -193,7 +194,7 @@
   min-width: 50px;
   max-height: 25px;
   min-height: 25px;
-  background: transparent;
+  background-color: var(--color-bg);
   margin-right: 10px;
   display: inline-flex;
   justify-content: center;
